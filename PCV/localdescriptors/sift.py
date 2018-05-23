@@ -74,7 +74,7 @@ def match(desc1,desc2):
         if arccos(dotprods)[indx[0]] < dist_ratio * arccos(dotprods)[indx[1]]:
             matchscores[i] = int(indx[0])
     
-    return matchscores
+    return matchscores[:, 0]
 
 
 def appendimages(im1,im2):
